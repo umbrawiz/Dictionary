@@ -369,11 +369,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jTextField1.setToolTipText("Enter your word");
         jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField1KeyReleased(evt);
@@ -611,10 +606,6 @@ public class NewJFrame extends javax.swing.JFrame {
             add();
         } 
     }//GEN-LAST:event_jLabel1MouseClicked
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
     //TTS SPEAKER
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
@@ -725,6 +716,7 @@ public class NewJFrame extends javax.swing.JFrame {
         listsetMD();
         jTextField1.setText("");
         search("");
+        JOptionPane.showMessageDialog(null,"Done");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -792,12 +784,6 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }
  
-//    public void reloadFile(){
-//    Dictionary added = management.insertFromFile("addedHistory.txt");
-//    Dictionary removed = management.insertFromFile("removedHistory.txt");
-//    Dictionary history = management.insertFromFile("History.txt");
-//    }
-    
     /**
      * @param args the command line arguments
      */

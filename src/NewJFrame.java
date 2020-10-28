@@ -376,7 +376,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         add(jLabel2);
-        ImageIcon Sicon = new ImageIcon("C:\\Users\\John\\search.jpg");
+        ImageIcon Sicon = new ImageIcon("search.jpg");
         jLabel2.setIcon(Sicon);
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

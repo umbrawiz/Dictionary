@@ -1,4 +1,3 @@
-
 import java.util.Comparator;
 
 /*
@@ -8,47 +7,48 @@ import java.util.Comparator;
  */
 
 /**
- *
  * @author ACER
  */
 public class Word {
     private String word_target;
     private String word_explain;
-    private boolean fav;
-    
-    Word(){
-        
-    }
-    Word(String word_target,String word_explain){
-        this.word_target = word_target;
-        this.word_explain = word_explain;
-    }
-    public void setWord_explain(String word_explain) {
-        this.word_explain = word_explain;
+
+    Word() {
+
     }
 
-    public void setWord_target(String word_target) {
+    Word(String word_target, String word_explain) {
         this.word_target = word_target;
+        this.word_explain = word_explain;
     }
 
     public String getWord_explain() {
         return word_explain;
     }
 
+    public void setWord_explain(String word_explain) {
+        this.word_explain = word_explain;
+    }
+
     public String getWord_target() {
         return word_target;
     }
 
-    
-    
+    public void setWord_target(String word_target) {
+        this.word_target = word_target;
+    }
+
+    @Override
+    public String toString() {
+        return word_target + word_explain + "\n";
+    }
+
 }
 
-class SortbyDict implements Comparator<Word> 
-{ 
+class SortbyDict implements Comparator<Word> {
     // Used for sorting in ascending order of 
     // roll number 
-    public int compare(Word a, Word b) 
-    { 
-        return a.getWord_target().compareTo(b.getWord_target()); 
-    } 
+    public int compare(Word a, Word b) {
+        return a.getWord_target().compareTo(b.getWord_target());
+    }
 } 

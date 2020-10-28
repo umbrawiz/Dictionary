@@ -1,4 +1,3 @@
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,7 +9,6 @@ import java.io.PrintWriter;
  */
 
 /**
- *
  * @author ACER
  */
 public class DictionaryCommandline {
@@ -21,9 +19,9 @@ public class DictionaryCommandline {
             System.out.println(((i + 1)) + "\t" + "| " + dictionary.getWordTarget(i) + "\t" + "| " + dictionary.getWordExplain(i));
         }
     }
-    
-    public void clearTheFile(String filepath) throws IOException{
-        FileWriter fr = new FileWriter(filepath, false); 
+
+    public void clearTheFile(String filepath) throws IOException {
+        FileWriter fr = new FileWriter(filepath, false);
         PrintWriter pw = new PrintWriter(fr, false);
         pw.flush();
         pw.close();

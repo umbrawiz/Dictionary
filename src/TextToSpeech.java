@@ -8,6 +8,7 @@
 // *
 // * @author John
 // */
+
 import com.darkprograms.speech.synthesiser.SynthesiserV2;
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.advanced.AdvancedPlayer;
@@ -15,14 +16,14 @@ import javazoom.jl.player.advanced.AdvancedPlayer;
 import java.io.IOException;
 
 public class TextToSpeech {
+    SynthesiserV2 synthesizer = new SynthesiserV2("AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw");
     private String text;
-    SynthesiserV2 synthesizer=new SynthesiserV2("AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw");
 
     public void setText(String text) {
         this.text = text;
     }
 
-    public void speak(){
+    public void speak() {
         Thread thread = new Thread(() -> {
 
             try {

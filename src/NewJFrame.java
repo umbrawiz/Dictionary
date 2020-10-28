@@ -301,8 +301,7 @@ public class NewJFrame extends javax.swing.JFrame {
         caret.setUpdatePolicy(DefaultCaret.NEVER_UPDATE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setToolTipText("");
-        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setToolTipText("Add");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -327,6 +326,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jLabel4.setToolTipText("Speaker");
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         add(jLabel4);
         ImageIcon Vicon = new ImageIcon("Speak.jpg");
         jLabel4.setIcon(Vicon);
@@ -375,6 +375,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setIcon(new ImageIcon("search.jpg"));
+        jLabel2.setToolTipText("Search");
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         add(jLabel2);
         ImageIcon Sicon = new ImageIcon("search.jpg");
         jLabel2.setIcon(Sicon);
